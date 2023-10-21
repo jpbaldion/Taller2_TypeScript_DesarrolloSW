@@ -47,10 +47,10 @@ function getAverageSeason(series: Serie[]): number{
 function renderCardSerie(serie: Serie){
     let divElement = document.createElement('div');
     divElement.setAttribute('class', 'card');
-    divElement.setAttribute('style', 'width: 18rem;');
+    divElement.setAttribute('style', 'width: 20rem;');
 
     divElement.innerHTML = `
-        <img src="https://previews.123rf.com/images/aprillrain/aprillrain2212/aprillrain221200612/196177803-imagen-de-caricatura-de-un-astronauta-sentado-en-una-luna-ilustraci%C3%B3n-de-alta-calidad.jpg" class="card-img-top" alt="...">
+        <img src="./imagenes/${serie.image}" alt="...">
         <div class="card-body">
             <h5 class="card-title">${serie.name}</h5>
             <p class="card-text">${serie.description}</p>

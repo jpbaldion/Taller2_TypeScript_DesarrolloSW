@@ -30,8 +30,8 @@ function getAverageSeason(series) {
 function renderCardSerie(serie) {
     var divElement = document.createElement('div');
     divElement.setAttribute('class', 'card');
-    divElement.setAttribute('style', 'width: 18rem;');
-    divElement.innerHTML = "\n        <img src=\"https://previews.123rf.com/images/aprillrain/aprillrain2212/aprillrain221200612/196177803-imagen-de-caricatura-de-un-astronauta-sentado-en-una-luna-ilustraci%C3%B3n-de-alta-calidad.jpg\" class=\"card-img-top\" alt=\"...\">\n        <div class=\"card-body\">\n            <h5 class=\"card-title\">".concat(serie.name, "</h5>\n            <p class=\"card-text\">").concat(serie.description, "</p>\n            <a href=\"").concat(serie.url, "\" class=\"btn btn-dark\">Mirala aqu\u00ED...</a>\n        </div>\n    ");
+    divElement.setAttribute('style', 'width: 20rem;');
+    divElement.innerHTML = "\n        <img src=\"./imagenes/".concat(serie.image, "\" alt=\"...\">\n        <div class=\"card-body\">\n            <h5 class=\"card-title\">").concat(serie.name, "</h5>\n            <p class=\"card-text\">").concat(serie.description, "</p>\n            <a href=\"").concat(serie.url, "\" class=\"btn btn-dark\">Mirala aqu\u00ED...</a>\n        </div>\n    ");
     contentCard.appendChild(divElement);
 }
 function clearCards() {
